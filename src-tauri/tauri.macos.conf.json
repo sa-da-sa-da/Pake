@@ -1,8 +1,26 @@
 {
   "bundle": {
-    "icon": ["icons/weread.icns"],
+    "icon": ["icons/weekly.icns"],
     "active": true,
-    "macOS": {},
-    "targets": ["dmg"]
+    "targets": ["dmg"],
+    "macOS": {
+      "signingIdentity": "-",
+      "hardenedRuntime": true,
+      "dmg": {
+        "background": "assets/macos/dmg/background.png",
+        "windowSize": {
+          "width": 680,
+          "height": 420
+        },
+        "appPosition": {
+          "x": 190,
+          "y": 250
+        },
+        "applicationFolderPosition": {
+          "x": 500,
+          "y": 250
+        }
+      }
+    }
   }
 }
